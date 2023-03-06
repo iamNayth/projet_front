@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'Nord';
+	src: url(‘..//assets/Fonts/nord-font/Nord-BoldItalic.ttf’) format(‘truetype’),
+	     url(‘..//assets/Fonts/nord-font/Nord-Book.ttf’) format(‘truetype’),
+}
+@font-face {
+	font-family: 'Oskari G2';
+	src: url(‘../assets/Fonts/oskari-g2-regular/oskari-g2-regular.otf’) format(‘truetype’);
+}
+
+/****LAYOUT****/
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding-top: 75px;
+
+}
+
+nav {
+    height: 75px;
+    border-bottom: solid 1px #1D1E18;
+    background-color: white;
+}
+
+.col > a > img {
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lexend';
+}
+
+.bcolor {
+    color: #1D1E18;
+}
+
+footer {
+    height: 460px;
+    background-color: #1D1E18;
+
+}
+
+.osk {
+    font-family: 'Oskari G2';
+}
+
+.indent {
+    border-left: solid 1px white;
+    border-bottom: solid 1px white;
+    height: 70px;
+    width: 20px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
