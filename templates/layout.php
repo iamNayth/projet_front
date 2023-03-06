@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
     <link href="../assets/style.css" rel="stylesheet" />
 </head>
   <body>
@@ -20,10 +21,10 @@
                         
                     </div>
                     <div class="col d-flex align-items-center justify-content-end gap-5 fs-5 pe-5">
-                        <a class="bcolor" href="">l'agence</a>
-                        <a class="bcolor" href="">expertises</a>
-                        <a class="bcolor" href="">projets</a>
-                        <a class="bcolor" href="">contact</a>
+                        <a class="pcolor" href="">l'agence</a>
+                        <a class="pcolor" href="">expertises</a>
+                        <a class="pcolor" href="">projets</a>
+                        <a class="pcolor" href="">contact</a>
                         <a href=""><img src="../assets/icons/Linkedin.black.svg"></a>
                         <a href=""><img src="../assets/icons/Instagram.black.svg"></a>
                         <a href=""><img src="../assets/icons/burger.svg"></a>
@@ -45,16 +46,16 @@
                 <div class="col d-flex flex-column gap-3 position-relative">
                     <a class="text-light fs-5" href="../public/index.php?page=homepage">l'agence</a><br>
                     <div class="indent"></div>
-                    <a class="osk text-light ps-5" href="">L'ADN de l'agence</a>
-                    <a class="osk text-light ps-5" href="">L'équipage</a>
+                    <a class="lex text-light ps-5" href="">L'ADN de l'agence</a>
+                    <a class="lex text-light ps-5" href="">L'équipage</a>
                 </div>
                 <div class="col d-flex flex-column gap-3 position-relative">
                     <a class="text-light fs-5" href="../public/index.php?page=homepage">expertise</a>
                     <div class="indent"></div>
-                    <a class="osk text-light ps-5 mt-4" href="">Stratégie</a>
-                    <a class="osk text-light ps-5" href="">Création</a>
-                    <a class="osk text-light ps-5" href="">Développement</a>
-                    <a class="osk text-light ps-5" href="">Webmarketing</a>
+                    <a class="lex text-light ps-5 mt-4" href="">Stratégie</a>
+                    <a class="lex text-light ps-5" href="">Création</a>
+                    <a class="lex text-light ps-5" href="">Développement</a>
+                    <a class="lex text-light ps-5" href="">Webmarketing</a>
                 </div>
                 <div class="col d-flex flex-column gap-3 position-relative">
                     <a class="text-light fs-5" href="../public/index.php?page=homepage">projets</a>
@@ -62,11 +63,11 @@
                 <div class="col d-flex flex-column gap-3 position-relative">
                     <a class="text-light fs-5" href="../public/index.php?page=homepage">contact</a>
                     <div class="indent"></div>
-                    <a class="osk text-light ps-5 mt-4" href="">contact@dimension.com</a>
-                    <a class="osk text-light ps-5" href="">Tel: 03.78.56.23.00</a>
-                    <a class="osk text-light ps-5" href="">49 Rue de Clichy 75009 Paris</a>
-                    <a class="osk text-light ps-5" href=""><img src="../assets/icons/Linkedin.svg"></a>
-                    <a class="osk text-light ps-5 ms-2" href=""><img src="../assets/icons/Instagram.svg"></a>
+                    <a class="lex text-light ps-5 mt-4" href="">contact@dimension.com</a>
+                    <a class="lex text-light ps-5" href="">Tel: 03.78.56.23.00</a>
+                    <a class="lex text-light ps-5" href="">49 Rue de Clichy 75009 Paris</a>
+                    <a class="lex text-light ps-5" href=""><img src="../assets/icons/Linkedin.svg"></a>
+                    <a class="lex text-light ps-5 ms-2" href=""><img src="../assets/icons/Instagram.svg"></a>
                 </div>
             </div>
             <div class="row mt-5 h-25">

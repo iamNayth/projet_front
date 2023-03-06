@@ -1,8 +1,27 @@
 @font-face {
-	font-family: 'Nord';
-	src: url(‘..//assets/Fonts/nord-font/Nord-BoldItalic.ttf’) format(‘truetype’),
-	     url(‘..//assets/Fonts/nord-font/Nord-Book.ttf’) format(‘truetype’),
+    font-family: 'Nord Book';
+    src: url('../assets/Fonts/nord-font/Web Fonts/Nord-Book.eot');
+    src: url('../assets/Fonts/nord-font/Web Fonts/Nord-BookItalic.eot') format('embedded-opentype'),
+        url('../assets/Fonts/nord-font/Web Fonts/Nord-Book.woff2') format('woff2'),
+        url('../assets/Fonts/nord-font/Web Fonts/Nord-Book.woff') format('woff'),
+        url('../assets/Fonts/nord-font/Web Fonts/Nord-Book.ttf') format('truetype'),
+        url('../assets/Fonts/nord-font/Web Fonts/Nord-Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Nord';
+    src: url('../assets/Fonts/nord-font/Web Fonts/Nord-BoldItalic.eot');
+    src: url('../assets/Fonts/nord-font/Web Fonts/Nord-BoldItalic.eot') format('embedded-opentype'),
+        url('../assets/Fonts/nord-font/Web Fonts/Nord-BoldItalic.woff2') format('woff2'),
+        url('../assets/Fonts/nord-font/Web Fonts/Nord-BoldItalic.woff') format('woff'),
+        url('../assets/Fonts/nord-font/Web Fonts/Nord-BoldItalic.ttf') format('truetype'),
+        url('../assets/Fonts/nord-font/Web Fonts/Nord-BoldItalic.svg') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
 @font-face {
 	font-family: 'Oskari G2';
 	src: url(‘../assets/Fonts/oskari-g2-regular/oskari-g2-regular.otf’) format(‘truetype’);
@@ -35,8 +54,11 @@ a {
     font-family: 'Lexend';
 }
 
-.bcolor {
+.pcolor {
     color: #1D1E18;
+}
+.scolor {
+    color: #8c1c11;
 }
 
 footer {
@@ -46,7 +68,21 @@ footer {
 }
 
 .osk {
-    font-family: 'Oskari G2';
+    font-family: 'Osakari';
+}
+
+.lex {
+    font-family: 'Lexend';
+    font-weight: 300;
+}
+
+.nord {
+    font-family: 'Nord';
+    
+}
+.nord-book {
+    font-family: 'Nord Book';
+    
 }
 
 .indent {
@@ -57,4 +93,55 @@ footer {
     position: absolute;
     top: 30px;
     left: 0;
+}
+
+main {
+    background-color: #f4f5f6;
+}
+
+.button {
+    border: solid 3px #8c1c11;
+    background:none;
+    height: 50px;
+    color: #8c1c11;
+    font-size: 18px;
+    font-family: 'Nord Book';
+    padding: 0px 15px;
+}
+
+/****Homepage****/
+
+#hero-home {
+    height: 45em;
+    background: url(../assets/images/accueil_hero.jpg);
+    background-size: cover;
+}
+
+#up-line {
+    position: absolute;
+    height: 80px;
+    width: 7px;
+    bottom: 0;
+    left: 50%;
+    background-color: #f4f5f6;
+}
+
+#hero-txt-bottom {
+    position: absolute;
+    bottom: 100px;
+    left: 41%;
+    font-size: 24px;
+    font-family: 'Nord';
+    color: white;
+}
+
+#design-1 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+#expertises-home {
+    background: url('../assets/images/accueil_expertises.jpg');
+    background-size: cover;
 }
