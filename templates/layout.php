@@ -22,9 +22,9 @@
                     </div>
                     <div class="col d-flex align-items-center justify-content-end gap-5 fs-5 pe-5">
                         <a class="pcolor" href="../public/index.php?page=agence">l'agence</a>
-                        <a class="pcolor" href="../public/index.php?page=">expertises</a>
-                        <a class="pcolor" href="../public/index.php?page=">projets</a>
-                        <a class="pcolor" href="../public/index.php?page=">contact</a>
+                        <a class="pcolor" href="../public/index.php?page=expertises">expertises</a>
+                        <a class="pcolor" href="../public/index.php?page=projets">projets</a>
+                        <a class="pcolor" href="../public/index.php?page=contact">contact</a>
                         <a href=""><img src="../assets/icons/Linkedin.black.svg"></a>
                         <a href=""><img src="../assets/icons/Instagram.black.svg"></a>
                         <a href=""><img src="../assets/icons/burger.svg"></a>
@@ -44,13 +44,13 @@
                     <a class="text-light fs-5" href="../public/index.php?page=homepage">accueil</a>
                 </div>
                 <div class="col d-flex flex-column gap-3 position-relative">
-                    <a class="text-light fs-5" href="../public/index.php?page=homepage">l'agence</a><br>
+                    <a class="text-light fs-5" href="../public/index.php?page=agence">l'agence</a><br>
                     <div class="indent"></div>
                     <a class="lex text-light ps-5" href="">L'ADN de l'agence</a>
                     <a class="lex text-light ps-5" href="">L'équipage</a>
                 </div>
                 <div class="col d-flex flex-column gap-3 position-relative">
-                    <a class="text-light fs-5" href="../public/index.php?page=homepage">expertise</a>
+                    <a class="text-light fs-5" href="../public/index.php?page=expertises">expertises</a>
                     <div class="indent"></div>
                     <a class="lex text-light ps-5 mt-4" href="">Stratégie</a>
                     <a class="lex text-light ps-5" href="">Création</a>

@@ -4,6 +4,7 @@ try {
     //Controllers
     require_once('../controllers/homepage.php');
     require_once('../controllers/agence.php');
+    require_once('../controllers/expertises.php');
     
 
     if( isset($_GET['page'])) {
@@ -13,6 +14,9 @@ try {
         }
         elseif ($page == "agence") {
             displayAgence();
+        }
+        elseif ($page == "expertises") {
+            displayExpertises();
         }
     } else {
          displayHomepage();
