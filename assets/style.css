@@ -141,7 +141,70 @@ main {
     left: 0;
 }
 
+#design-2 {
+    position: absolute;
+    top:0;
+    left:-5px;
+}
+
+#design-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
 #expertises-home {
     background: url('../assets/images/accueil_expertises.jpg');
+    background-size: cover;
+}
+
+/****L'AGENCE****/
+
+#hero-agence {
+    height: 45em;
+    background: url(../assets/images/agence_hero.jpg);
+    background-size: cover;
+}
+
+#bg-agence {
+    background: rgba(0, 0, 0, 0.399);
+}
+
+.team {
+    height:200px;
+    width: 200px;
+    border: solid 3px #8c1c11;
+    border-radius: 50%;
+}
+
+#chloe-design {
+    position: absolute;
+    bottom: 80px;
+    right:20px;
+}
+#stephane-design {
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+#thomas-design {
+    position: absolute;
+    bottom: 60px;
+    left:70px;
+}
+#julie-design {
+    position: absolute;
+    top: 0px;
+    left:0;
+}
+#damien-design {
+    position: absolute;
+    top: 40px;
+    right:0;
+}
+
+#agence-recrutement {
+    height: 40em;
+    background: url('../assets/images/agence_recrute.jpg');
     background-size: cover;
 }

@@ -3,6 +3,7 @@
 try {
     //Controllers
     require_once('../controllers/homepage.php');
+    require_once('../controllers/agence.php');
     
 
     if( isset($_GET['page'])) {
@@ -10,11 +11,11 @@ try {
         if($page == "homepage"){
            displayHomepage();
         }
-        elseif ($page == "accueil") {
-            
+        elseif ($page == "agence") {
+            displayAgence();
         }
     } else {
-        
+         displayHomepage();
     }
     
 

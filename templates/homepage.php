@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container pb-5">
+            <div class="container pb-5 mb-5">
                 <div class="row">
                     <div class="col-3 text-center">
                         <a href="" class="fs-3 text-light nord-book">Strategie</a>
@@ -72,10 +72,66 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
+    <section>
+        <h1 class="nord mb-3 text-center">Nos projets</h1>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../assets/images/accueil_projet1.png" class="img-fluid">
+                </div>
+                <div class="col-3">
+                    <img src="../assets/images/accueil_projet2.png" class="img-fluid">
+                </div>
+                <div class="col-3">
+                    <img src="../assets/images/accueil_projet3.png" class="img-fluid">
+                </div>
+                <div class="col-3">
+                    <img src="../assets/images/accueil_projet4.png" class="img-fluid">
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                        <button class="button bg-light">PLUS DE PROJETS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="position-relative">
+        <h1 class="nord mb-3 text-center mb-3">ils nous ont fait<br>confiance</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center mb-5 mt-5">
+                    <img src="../assets/icons/Boosh B.svg">
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mb-5">
+                    <img src="../assets/icons/Club voyage.svg">
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mb-5">
+                    <img src="../assets/icons/Expertise.svg">
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mb-5">
+                    <img src="../assets/icons/Salamarket.svg">
+                </div>
+            </div>
+        </div>
+        <div id="design-2"><img src="../assets/images/Design2.svg"></div>
+        <div id="design-3"><img src="../assets/images/Design3.svg"></div>
+    </section>
+    <section>
+        <h1 class="nord mb-3 text-center mb-3">Et si vous tentiez<br>l'experience ?</h1>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <img src="../assets/icons/arrow-down-alt-svgrepo-com.svg" style="height:40px;">
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mt-2">
+                    <button class="button bg-light">Contactez-nous</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
 
 <?php $content = ob_get_clean();?>
 <?php require('../templates/layout.php') ?>

@@ -21,10 +21,10 @@
                         
                     </div>
                     <div class="col d-flex align-items-center justify-content-end gap-5 fs-5 pe-5">
-                        <a class="pcolor" href="">l'agence</a>
-                        <a class="pcolor" href="">expertises</a>
-                        <a class="pcolor" href="">projets</a>
-                        <a class="pcolor" href="">contact</a>
+                        <a class="pcolor" href="../public/index.php?page=agence">l'agence</a>
+                        <a class="pcolor" href="../public/index.php?page=">expertises</a>
+                        <a class="pcolor" href="../public/index.php?page=">projets</a>
+                        <a class="pcolor" href="../public/index.php?page=">contact</a>
                         <a href=""><img src="../assets/icons/Linkedin.black.svg"></a>
                         <a href=""><img src="../assets/icons/Instagram.black.svg"></a>
                         <a href=""><img src="../assets/icons/burger.svg"></a>
@@ -75,7 +75,7 @@
 
                 </div>
                 <div class="col d-flex align-items-center">
-                    <span class="osk text-light">2023 All rights reserved to Dimension - Mentions légales</span>
+                    <span style="font-size:12px;" class="lex text-light text-center">2023 All rights reserved to Dimension - Mentions légales</span>
                 </div>
                 <div class="col d-flex align-items-center justify-content-end">
                     <a href="../public/index.php?page=homepage"><img src="../assets/icons/dimension.white.svg"></a>
