@@ -208,3 +208,64 @@ main {
     background: url('../assets/images/agence_recrute.jpg');
     background-size: cover;
 }
+
+/****EXPERTISES****/
+
+#hero-expertises {
+    height: 90em;
+    background: url('../assets/images/expertise_hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#bg-expertises {
+    background: rgba(0, 0, 0, 0.399);
+}
+
+.bloc-expertises {
+    width: 400px;
+    height: 500px;
+    border: solid 3px White;
+}
+
+#strategie {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 46.88%, rgba(0, 0, 0, 0.8) 100%), url('../assets/images/strategie.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+#creation {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 46.88%, rgba(0, 0, 0, 0.8) 100%), url('../assets/images/creation.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#developpement {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 46.88%, rgba(0, 0, 0, 0.8) 100%), url('../assets/images/developpement.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#webmarketing {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 46.88%, rgba(0, 0, 0, 0.8) 100%), url('../assets/images/webmarketing.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.line {
+    height: 37px;
+    width: 1px;
+    background: black;
+}
+
+#exemple-developpement {
+    height: 380px;
+    width:605px;
+    top: 6em;
+    right: 15em; 
+}
+
+#webmarketing-img {
+    height: 35em;
+    width:35em;
+    top:7em;
+    left:5em;
+}
