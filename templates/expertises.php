@@ -7,29 +7,33 @@
             <div class="col-12 text-center">
                 <h1 class="text-light nord">4 grands domaines, 20 competences</h1>
             </div>
-            <div class="col-6 d-flex justify-content-center align-items-center p-5 position-relative">
-                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end" id="strategie">
+            <div class="col-6 d-flex justify-content-center align-items-center p-5">
+                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end position-relative" id="strategie">
                     <span class="lex text-light fs-4">Stratégie</span>
+                    <img class="position-absolute" src="../assets/icons/design-strategie.svg" style="top: 7em; left: -3em;">
                 </div>
-                <img class="position-absolute" src="../assets/icons/design-strategie.svg" style="top: 7em; left: 10.5em;">
+                
             </div>
-            <div class="col-6 d-flex justify-content-center align-items-center p-5 position-relative">
-                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end" id="creation">
+            <div class="col-6 d-flex justify-content-center align-items-center p-5">
+                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end position-relative" id="creation">
                     <span class="lex text-light fs-4">Création</span>
+                    <img class="position-absolute" src="../assets/icons/design-creation.svg" style="top: -2.4em; left: -5em;">
                 </div>
-                <img class="position-absolute" src="../assets/icons/design-creation.svg" style="top: 0.8em; left: 10em;">
+                
             </div>
-            <div class="col-6 d-flex justify-content-center align-items-center p-5 position-relative">
-                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end" id="developpement">
+            <div class="col-6 d-flex justify-content-center align-items-center p-5">
+                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end position-relative" id="developpement">
                     <span class="lex text-light fs-4">Développement</span>
+                    <img class="position-absolute" src="../assets/icons/design-developpement.svg" style="top: 7em; right: -2.8em;">
                 </div>
-                <img class="position-absolute" src="../assets/icons/design-developpement.svg" style="top: 7em; right: 10.55em;">
+                
             </div>
-            <div class="col-6 d-flex justify-content-center align-items-center p-5 position-relative">
-                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end" id="webmarketing">
+            <div class="col-6 d-flex justify-content-center align-items-center p-5">
+                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end position-relative" id="webmarketing">
                     <span class="lex text-light fs-4">Webmarketing</span>
+                    <img class="position-absolute" src="../assets/icons/design-marketing.svg" style="top: 5em; right: -2.8em;">
                 </div>
-                <img class="position-absolute" src="../assets/icons/design-marketing.svg" style="top: 5em; right: 10.5em;">
+                
             </div>
         </div>
     </div>
@@ -162,7 +166,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="nord text-center">Convaincu ? Alors n'hesitez plus !</h2>
-                <button class="button bg-light mt-5">Contactez-nous</button>
+                <a href="../public/index.php?page=contact"><button class="button bg-light mt-5">Contactez-nous</button></a>
             </div>
         </div>
     </div>

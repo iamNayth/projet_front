@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <span id="hero-txt-bottom">Faites le grand saut</span>
+        <span id="hero-txt-bottom" class="text-center">Faites le grand saut</span>
         <div id="up-line"></div>
     </section>
     <section class="mb-5 p-5 position-relative">
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col"></div>
                     <div class="col-12 d-flex justify-content-center align-items-center mt-3">
-                        <button class="button bg-light">En savoir +</button>
+                        <a href="../public/index.php?page=expertises"><button class="button bg-light">En savoir +</button></a>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     <img src="../assets/images/accueil_projet4.png" class="img-fluid">
                 </div>
                 <div class="col-12 d-flex justify-content-center align-items-center mt-5">
-                        <button class="button bg-light">PLUS DE PROJETS</button>
+                    <a href="../public/index.php?page=projets"><button class="button bg-light">PLUS DE PROJETS</button></a>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
                     <img src="../assets/icons/arrow-down-alt-svgrepo-com.svg" style="height:40px;">
                 </div>
                 <div class="col-12 d-flex justify-content-center align-items-center mt-2">
-                    <button class="button bg-light">Contactez-nous</button>
+                    <a href="../public/index.php?page=contact"><button class="button bg-light">Contactez-nous</button></a>
                 </div>
             </div>
         </div>

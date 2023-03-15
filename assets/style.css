@@ -129,10 +129,11 @@ main {
 #hero-txt-bottom {
     position: absolute;
     bottom: 100px;
-    left: 41%;
+    left: 0;
     font-size: 24px;
     font-family: 'Nord';
     color: white;
+    width: 100%;
 }
 
 #design-1 {
@@ -156,6 +157,11 @@ main {
 #expertises-home {
     background: url('../assets/images/accueil_expertises.jpg');
     background-size: cover;
+}
+
+.burger {
+    border: none; 
+    background: none;
 }
 
 /****L'AGENCE****/
@@ -268,4 +274,65 @@ main {
     width:35em;
     top:7em;
     left:5em;
+}
+
+/****CONTACT****/
+
+#hero-contact {
+    height: 45em;
+    background: url(../assets/images/contact_hero.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#cut1 {
+    position: absolute;
+    height: 80px;
+    width: 7px;
+    bottom: 0;
+    left: 50%;
+    background-color: #f4f5f6;
+}
+#cut2 {
+    position: absolute;
+    height: 350px;
+    width: 7px;
+    bottom: 10em;
+    left: 50%;
+    background-color: #f4f5f6;
+}
+
+.logos {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-bottom {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    font-size: 24px;
+    font-family: 'Nord';
+    color: white;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: #1D1E18 solid 4px;
+    padding: 5px;
+}
+textarea {
+    background: none;
+    border: #1D1E18 solid 4px;
+    padding: 5px;
+    resize: none;
+    height: 10em;
+}
+
+#send {
+    border: #1D1E18 solid 4px;
+    width: 200px;
 }

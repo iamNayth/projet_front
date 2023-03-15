@@ -85,7 +85,7 @@
                 <img class="img-fluid" src="../assets/images/agence_projet4.png">
             </div>
             <div class="col-12 text-center mt-5">
-                <button class="button bg-light">PLUS DE PROJETS</button>
+                <a href="../public/index.php?page=projets"><button class="button bg-light">PLUS DE PROJETS</button></a>
             </div>
         </div>
     </div>
@@ -97,7 +97,7 @@
                 <span class='nord fs-3 text-light'>Envie de rejoindre l'equipage ?</span>
                 <span class='nord fs-3 text-light'>Contactez-nous !</span>
                 <span class='lex fs-1 fw-bolder text-light'>contact@dimension.com</span>
-                <span class='lex fs-4 text-light'>ou remplissez le <strong style="text-decoration:underline">formulaire de contact</strong></span>
+                <span class='lex fs-4 text-light'>ou remplissez le <a href="../public/index.php?page=contact" style="text-decoration:underline; color: white">formulaire de contact</a></span>
             </div>
         </div>
     </div>
@@ -107,7 +107,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="nord text-center">Un projet ? notre equipe est prete a vous preter main forte dans ce grand voyage !</h1>
-                <button class="button bg-light mt-5">Contactez-nous</button>
+                <a href="../public/index.php?page=contact"><button class="button bg-light mt-5">Contactez-nous</button></a>
             </div>
         </div>
     </div>
