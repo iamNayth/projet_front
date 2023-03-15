@@ -4,8 +4,8 @@
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col d-flex align-items-center justify-content-center flex-column">
-                    <span class="nord-book text-light fs-1">Internet est un univers vaste.</span><br>
-                    <span class="nord text-light fs-1 ">Laissez-nous vous guider.</span>
+                    <span class="nord-book text-light fs-1 text-center">Internet est un univers vaste.</span><br>
+                    <span class="nord text-light fs-1  text-center">Laissez-nous vous guider.</span>
                 </div>
             </div>
         </div>

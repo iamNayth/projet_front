@@ -11,34 +11,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
     <link href="../assets/style.css" rel="stylesheet" />
 </head>
-  <body>
-    <header>
+  <body >
+    <header class="position-relative w-100">
         <nav class="fixed-top">
             <div class="container-fluid h-100">
                 <div class="row h-100">
                     <div class="col d-flex align-items-center ps-5">
-                        <a href="../public/index.php?page=homepage"><img src="../assets/icons/dimension.black.svg"></a>
-                        
+                        <a href="../public/index.php?page=homepage"><img src="../assets/icons/dimension.black.svg"></a>  
                     </div>
                     <div class="col d-flex align-items-center justify-content-end gap-5 fs-5 pe-5">
-                        <a class="pcolor" href="../public/index.php?page=agence">l'agence</a>
-                        <a class="pcolor" href="../public/index.php?page=expertises">expertises</a>
-                        <a class="pcolor" href="../public/index.php?page=projets">projets</a>
-                        <a class="pcolor" href="../public/index.php?page=contact">contact</a>
-                        <a href="https://fr.linkedin.com/"><img src="../assets/icons/Linkedin.black.svg"></a>
-                        <a href="https://www.instagram.com/"><img src="../assets/icons/Instagram.black.svg"></a>
-                        <button class="burger"><img src="../assets/icons/burger.svg"></button>
+                        <a class="pcolor d-none d-lg-block d-xl-block d-xxl-block" href="../public/index.php?page=agence">l'agence</a>
+                        <a class="pcolor d-none d-lg-block d-xl-block d-xxl-block" href="../public/index.php?page=expertises">expertises</a>
+                        <a class="pcolor d-none d-lg-block d-xl-block d-xxl-block" href="../public/index.php?page=projets">projets</a>
+                        <a class="pcolor d-none d-lg-block d-xl-block d-xxl-block" href="../public/index.php?page=contact">contact</a>
+                        <a class="d-none d-lg-block d-xl-block d-xxl-block" href="https://fr.linkedin.com/"><img src="../assets/icons/Linkedin.black.svg"></a>
+                        <a class="d-none d-lg-block d-xl-block d-xxl-block" href="https://www.instagram.com/"><img src="../assets/icons/Instagram.black.svg"></a>
+                        <a href="#wrap" class="burger d-lg-none d-xl-none" id="open"><img class="" src="../assets/icons/burger.svg"></a>
                     </div>
                 </div>
             </div>
         </nav>
+
     </header>
+    <div id="wrap">
+        <div class="nav d-flex align-items-center justify-content-center">
+            <div class="p-5 h-100 d-flex flex-column gap-5 align-items-center">
+                <a href="#" id="close" class="text-light">×</a>
+                <a class="text-light" href="../public/index.php?page=agence">l'agence</a>
+                <a class="text-light" href="../public/index.php?page=expertises">expertises</a>
+                <a class="text-light" href="../public/index.php?page=projets">projets</a>
+                <a class="text-light" href="../public/index.php?page=contact">contact</a>
+                <a href="https://fr.linkedin.com/"><img src="../assets/icons/Linkedin.svg"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/icons/Instagram.svg"></a>
+            </div>
+        </div>
+    </div>
     <main>
         <?= $content ?>
     </main>
     <footer>
         <div class="container h-100 p-5">
-            <div class="row h-75">
+            <div class="row h-75 gy-5">
                 <div class="col">
                     <a class="text-light fs-5" href="../public/index.php?page=homepage">accueil</a>
                 </div>
@@ -70,10 +83,10 @@
                 </div>
             </div>
             <div class="row mt-5 h-25">
-                <div class="col">
+                <div class="col d-none d-lg-block d-xl-block d-xxl-block">
 
                 </div>
-                <div class="col d-flex align-items-center">
+                <div class="col d-flex align-items-center d-none d-lg-block d-xl-block d-xxl-block">
                     <span style="font-size:12px;" class="lex text-light text-center">2023 All rights reserved to Dimension - Mentions légales</span>
                 </div>
                 <div class="col d-flex align-items-center justify-content-end">
