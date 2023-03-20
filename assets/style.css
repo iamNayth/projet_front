@@ -160,6 +160,10 @@ main {
     background-size: cover;
 }
 
+.constelation {
+    height: 15em;
+}
+
 .burger {
     border: none; 
     background: none;
@@ -206,6 +210,7 @@ main {
     height: 45em;
     background: url(../assets/images/agence_hero.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 #bg-agence {
@@ -222,27 +227,27 @@ main {
 #chloe-design {
     position: absolute;
     bottom: 80px;
-    right:20px;
+    right:-13px;
 }
 #stephane-design {
     position: absolute;
     top: 0;
-    left: 15px;
+    left: -18px;
 }
 #thomas-design {
     position: absolute;
     bottom: 60px;
-    left:70px;
+    left:37px;
 }
 #julie-design {
     position: absolute;
-    top: 0px;
+    top: -20px;
     left:0;
 }
 #damien-design {
     position: absolute;
     top: 40px;
-    right:0;
+    right:-32px;
 }
 
 #agence-recrutement {
@@ -315,7 +320,7 @@ main {
 /****CONTACT****/
 
 #hero-contact {
-    height: 45em;
+    min-height: 45em;
     background: url(../assets/images/contact_hero.jpg);
     background-size: cover;
     position: relative;
@@ -372,3 +377,21 @@ textarea {
     border: #1D1E18 solid 4px;
     width: 200px;
 }
+
+/****Mediaquery****/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) { 
+
+
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) { 
+
+    #hero-contact {
+        height: 50em;
+    }
+
+ }
