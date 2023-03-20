@@ -33,7 +33,7 @@
         </nav>
 
     </header>
-    <div id="wrap">
+    <div id="wrap" class="d-block d-lg-none">
         <div class="nav d-flex align-items-center justify-content-center">
             <div class="p-5 h-100 d-flex flex-column gap-5 align-items-center">
                 <a href="#" id="close" class="text-light">×</a>

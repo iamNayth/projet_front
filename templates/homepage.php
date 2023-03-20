@@ -34,25 +34,25 @@
                         <span class="nord-book text-light fs-1">4 grands domaines</span>
                         <span class="nord text-light fs-1 ">d'expertises</span>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
                         <div class="constelation">
                             <img class="img-fluid" src="../assets/icons/Stratégie.svg">
                         </div>
                         <a href="" class="fs-3 text-light nord-book">Strategie</a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
                         <div class="constelation">
                             <img class="img-fluid" src="../assets/icons/Creation.svg">
                         </div>
                         <a href="" class="fs-3 text-light nord-book">Creation</a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
                         <div class="constelation">
                             <img class="img-fluid" src="../assets/icons/Développement.svg">
                         </div>
                         <a href="" class="fs-3 text-light nord-book">Developpement</a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
                         <div class="constelation">
                             <img class="img-fluid" src="../assets/icons/Web marketing.svg">
                         </div>
