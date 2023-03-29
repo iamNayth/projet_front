@@ -4,7 +4,7 @@ require_once('../models/db.php');
 require_once("../models/admin_managment.php");
 
 function displayAdmins() {
-    $admins = displayAdmin();
+    $admins = getAdmin();
     $msg = '';
     if (isset($_POST['addAdmin'])) {
         $msg = addAdmin();

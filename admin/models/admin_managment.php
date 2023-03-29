@@ -1,7 +1,7 @@
 <?php
 
 
-function displayAdmin() 
+function getAdmin() 
 {
     $database = dbConnect();
     $statement = $database->prepare("SELECT * FROM admin");
