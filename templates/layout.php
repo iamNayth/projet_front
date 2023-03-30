@@ -34,9 +34,9 @@
 
     </header>
     <div id="wrap" class="d-block d-lg-none">
-        <div class="nav d-flex align-items-center justify-content-center">
-            <div class="p-5 h-100 d-flex flex-column gap-5 align-items-center">
-                <a href="#" id="close" class="text-light">×</a>
+        <div class="pt-5 nav d-flex align-items-center justify-content-center position-relative">
+            <div class="pt-5 h-100 d-flex flex-column gap-5 align-items-center ">
+                <a href="#" id="close" class="text-light"><svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 9.00004L9 15M15 15L9 9.00004M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
                 <a class="text-light" href="../public/index.php?page=agence">l'agence</a>
                 <a class="text-light" href="../public/index.php?page=expertises">expertises</a>
                 <a class="text-light" href="../public/index.php?page=projets">projets</a>
