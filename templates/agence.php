@@ -95,7 +95,7 @@
                 <img class="img-fluid" src="../assets/images/agence_projet4.png">
             </div>
             <div class="col-12 text-center mt-5">
-                <a href="../public/index.php?page=projets"><button class="button bg-light">PLUS DE PROJETS</button></a>
+                <a href="../public/index.php?page=projets"><button class="button">PLUS DE PROJETS</button></a>
             </div>
         </div>
     </div>
@@ -117,7 +117,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="nord text-center">Un projet ? notre equipe est prete a vous preter main forte dans ce grand voyage !</h1>
-                <a href="../public/index.php?page=contact"><button class="button bg-light mt-5">Contactez-nous</button></a>
+                <a href="../public/index.php?page=contact"><button class="button mt-5">Contactez-nous</button></a>
             </div>
         </div>
     </div>

@@ -166,7 +166,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="nord text-center">Convaincu ? Alors n'hesitez plus !</h2>
-                <a href="../public/index.php?page=contact"><button class="button bg-light mt-5">Contactez-nous</button></a>
+                <a href="../public/index.php?page=contact"><button class="button mt-5">Contactez-nous</button></a>
             </div>
         </div>
     </div>

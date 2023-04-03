@@ -74,7 +74,7 @@
                     <label class="lex fw-bold fs-4 mb-2" for="message">Message</label><br>
                     <textarea class="lex w-100" type="text" name="name"></textarea>
                 </div>
-                <button id="send" type="submit" class="lex p-3 fw-bold">Envoyer</button>
+                <button id="send" type="submit" class="lex p-3 fw-bold bg-light">Envoyer</button>
             </div>
         </div>
     </div>
