@@ -122,7 +122,6 @@ main {
 .fadeInDown {
     animation: fadeInDown 1s;
     animation-delay: 0.2s;
-    opacity: 0;
 }
 @keyframes fadeInDown {
     from {
@@ -134,16 +133,9 @@ main {
        transform: translateY(0);
     }
 } 
-.fadeInDown.visible {
-    opacity: 1;
-}
 .fadeInTop {
     animation: fadeInTop 1s;
     animation-delay: 1s;
-    opacity: 0;
-}
-.fadeInTop.visible {
-    opacity: 1;
 }
 @keyframes fadeInTop {
     from {
@@ -151,9 +143,10 @@ main {
         transform: translateY(50px);
     }
     to {
-        opacity: 1;
+        
         transform: translateY(0);
         transition: none;
+        opacity: 1;
     }
 }
 .fadeInLeft {
@@ -171,10 +164,25 @@ main {
         transition: none;
     }
 } 
+.fadeInRight {
+    animation: fadeInRight 1s;
+    animation-delay: 1s;
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transition: none;
+    }
+} 
 .focusIn {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation-delay: 1s
+    animation-delay: 1.5s;
 }
 @-webkit-keyframes text-focus-in {
     0% {
@@ -282,7 +290,6 @@ main {
   .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation-delay: 1s;
 }
   @-webkit-keyframes tracking-in-expand {
     0% {
@@ -559,12 +566,12 @@ main {
     background-size: cover;
     background-position: center;
 }
-#developpement {
+#dev {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 46.88%, rgba(0, 0, 0, 0.8) 100%), url('../assets/images/developpement.jpg');
     background-size: cover;
     background-position: center;
 }
-#webmarketing {
+#web {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 46.88%, rgba(0, 0, 0, 0.8) 100%), url('../assets/images/webmarketing.jpg');
     background-size: cover;
     background-position: center;

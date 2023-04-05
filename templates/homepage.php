@@ -4,12 +4,12 @@
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col d-flex align-items-center justify-content-center flex-column">
-                    <span class="nord-book text-light fs-1 text-center fadeInDown">Internet est un univers vaste.</span><br>
-                    <span class="nord text-light fs-1  text-center fadeInTop">Laissez-nous vous guider.</span>
+                    <span class="nord-book text-light fs-1 text-center fadeInDown notVisible">Internet est un univers vaste.</span><br>
+                    <span class="nord text-light fs-1  text-center fadeInTop notVisible">Laissez-nous vous guider.</span>
                 </div>
             </div>
         </div>
-        <span id="hero-txt-bottom" class="text-center focusIn">Faites le grand saut</span>
+        <span id="hero-txt-bottom" class="text-center focusIn notVisible">Faites le grand saut</span>
         <div id="up-line"></div>
     </section>
     <section class="mb-5 p-5 position-relative">
@@ -35,26 +35,26 @@
                         <span id="sub-h2" class="nord text-light fs-1 notVisible">d'expertises</span>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 text-center">
-                        <div class="constelation">
-                            <img id="const1" class="img-fluid " src="../assets/icons/Stratégie.svg">
+                        <div class="constelation notVisible"id="const1">
+                            <img  class="img-fluid " src="../assets/icons/Stratégie.svg">
                         </div>
                         <a href="" id="c1" class="fs-3 text-light nord-book notVisible">Strategie</a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 text-center">
-                        <div class="constelation">
-                            <img id="const2" class="img-fluid " src="../assets/icons/Creation.svg">
+                        <div class="constelation notVisible"id="const2">
+                            <img  class="img-fluid " src="../assets/icons/Creation.svg">
                         </div>
                         <a href="" id="c2" class="fs-3 text-light nord-book p2 notVisible">Creation</a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 text-center">
-                        <div class="constelation">
-                            <img id="const3" class="img-fluid " src="../assets/icons/Développement.svg">
+                        <div class="constelation notVisible"id="const3">
+                            <img  class="img-fluid " src="../assets/icons/Développement.svg">
                         </div>
                         <a href="" id="c3" class="fs-3 text-light nord-book p2 notVisible">Developpement</a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 text-center">
-                        <div class="constelation">
-                            <img id="const4" class="img-fluid " src="../assets/icons/Web marketing.svg">
+                        <div class="constelation notVisible"id="const4">
+                            <img  class="img-fluid " src="../assets/icons/Web marketing.svg">
                         </div>
                         <a href="" id="c4" class="fs-3 text-light nord-book p2 notVisible">Webmarketing</a>
                     </div>
@@ -64,11 +64,11 @@
                 <div class="row">
                     <div class="col"></div>
                     <div class="col-8  pt-3 d-flex align-items-center justify-content-center">
-                        <p id="p2" class="text-light text-center lex">De la genèse de votre projet jusqu'à sa mise en orbite, Dimension est en mesure de vous accompagner sur 20 missions bien distinctes. Du digital au print en passant par la vidéo ou la photo, notre objectif reste le même : apporter une solution claire et compréhensible à nos partenaires.</p>
+                        <p id="p2" class="text-light text-center lex notVisible">De la genèse de votre projet jusqu'à sa mise en orbite, Dimension est en mesure de vous accompagner sur 20 missions bien distinctes. Du digital au print en passant par la vidéo ou la photo, notre objectif reste le même : apporter une solution claire et compréhensible à nos partenaires.</p>
                     </div>
                     <div class="col"></div>
                     <div class="col-12 d-flex justify-content-center align-items-center mt-3">
-                        <a href="../public/index.php?page=expertises"><button class="button" id="btn2">En savoir +</button></a>
+                        <a href="../public/index.php?page=expertises"><button class="button notVisible" id="btn2">En savoir +</button></a>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center mt-5">
-                    <a href="../public/index.php?page=projets" id="btn3"><button class="button">PLUS DE PROJETS</button></a>
+                    <a href="../public/index.php?page=projets" id="btn3"><button class="button notVisible">PLUS DE PROJETS</button></a>
             </div>
         </div>
     </section>
@@ -122,7 +122,7 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-items-center">
-                    <img id="arrow" src="../assets/icons/arrow-down-alt-svgrepo-com.svg" style="height:40px;">
+                    <img id="arrow" src="../assets/icons/arrow-down-alt-svgrepo-com.svg" style="height:40px;" class="notVisible">
                 </div>
                 <div class="col-12 d-flex justify-content-center align-items-center mt-2">
                     <a href="../public/index.php?page=contact"><button class="button">Contactez-nous</button></a>
@@ -146,36 +146,38 @@
         }, 1200);
 
         // Sélectionner l'élément à animer
-        const h1 = document.getElementById('h1');
-        const p1 = document.getElementById('p1');
-        const img1 = document.getElementById('img1');
-        const design1 = document.getElementById('design-1');
-        const h2 = document.getElementById('h2');
-        const subH2 = document.getElementById('sub-h2');
-        const c1 = document.getElementById('c1');
-        const c2 = document.getElementById('c2');
-        const c3 = document.getElementById('c3');
-        const c4 = document.getElementById('c4');
-        const const1 = document.getElementById('const1');
-        const const2 = document.getElementById('const2');
-        const const3 = document.getElementById('const3');
-        const const4 = document.getElementById('const4');
-        const p2 = document.getElementById('p2');
-        const btn2 = document.getElementById('btn2');
-        const h3 = document.getElementById('h3');
-        const btn3 = document.getElementById('btn3');
-        const arrow = document.getElementById('arrow');
+        let h1 = document.getElementById('h1');
+        let p1 = document.getElementById('p1');
+        let img1 = document.getElementById('img1');
+        let design1 = document.getElementById('design-1');
+        let h2 = document.getElementById('h2');
+        let subH2 = document.getElementById('sub-h2');
+        let c1 = document.getElementById('c1');
+        let c2 = document.getElementById('c2');
+        let c3 = document.getElementById('c3');
+        let c4 = document.getElementById('c4');
+        let const1 = document.getElementById('const1');
+        let const2 = document.getElementById('const2');
+        let const3 = document.getElementById('const3');
+        let const4 = document.getElementById('const4');
+        let p2 = document.getElementById('p2');
+        let btn2 = document.getElementById('btn2');
+        let h3 = document.getElementById('h3');
+        let btn3 = document.getElementById('btn3');
+        let arrow = document.getElementById('arrow');
 
         // Fonction qui vérifie si l'élément est visible
         function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom <= windowHeight &&
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
-        }
+    }
 
         // Fonction qui ajoute la classe d'animation
         function animateOnScroll() {
