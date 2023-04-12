@@ -137,7 +137,7 @@
         let fadeInTop = document.querySelector('.fadeInTop');
         setTimeout(() => {
             fadeInTop.classList.add('visible');
-        }, 2000);
+        }, 1000);
 
         //FadeInDown
         let fadeInDown = document.querySelector('.fadeInDown');
@@ -168,14 +168,14 @@
 
         // Fonction qui vérifie si l'élément est visible
         function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            const rect = el.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= windowHeight &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom  -100 <= windowHeight &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
 
@@ -191,7 +191,7 @@
                 p1.classList.add('fadeInLeft');
                 setTimeout(() => {
                 p1.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(img1)) {
                 img1.classList.add('slide-in-bck-center');
@@ -200,7 +200,7 @@
                 },  1000);
             }
             if (isElementInViewport(design1)) {
-                design1.classList.add('width-left');
+                design1.classList.add('fadeInLeft');
                 setTimeout(() => {
                 design1.classList.add('visible');
                 },  1000);
@@ -215,73 +215,73 @@
                 subH2.classList.add('fadeInTop');
                 setTimeout(() => {
                 subH2.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(c1)) {
                 c1.classList.add('fadeInTop');
                 setTimeout(() => {
                 c1.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(c2)) {
                 c2.classList.add('fadeInTop');
                 setTimeout(() => {
                 c2.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(c3)) {
                 c3.classList.add('fadeInTop');
                 setTimeout(() => {
                 c3.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(c4)) {
                 c4.classList.add('fadeInTop');
                 setTimeout(() => {
                 c4.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(const1)) {
                 const1.classList.add('slide-in-elliptic');
                 setTimeout(() => {
                 const1.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(const2)) {
                 const2.classList.add('slide-in-elliptic');
                 setTimeout(() => {
                 const2.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(const3)) {
                 const3.classList.add('slide-in-elliptic');
                 setTimeout(() => {
                 const3.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(const4)) {
                 const4.classList.add('slide-in-elliptic');
                 setTimeout(() => {
                 const4.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(p2)) {
                 p2.classList.add('fadeInTop');
                 setTimeout(() => {
                 p2.classList.add('visible');
-                },  2000);
+                },  1000);
             }
             if (isElementInViewport(btn2)) {
                 btn2.classList.add('focusIn');
                 setTimeout(() => {
                 btn2.classList.add('visible');
-                },  3000);
+                },  1000);
             }
             if (isElementInViewport(btn3)) {
                 btn3.classList.add('focusIn');
                 setTimeout(() => {
                 btn3.classList.add('visible');
-                },  3000);
+                },  1000);
             }
             if (isElementInViewport(h3)) {
                 h3.classList.add('fadeInDown');
@@ -293,7 +293,7 @@
                 arrow.classList.add('bounce-top');
                 setTimeout(() => {
                 arrow.classList.add('visible');
-                },  1900);
+                },  1000);
             }
         }
 

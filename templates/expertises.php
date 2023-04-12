@@ -22,14 +22,14 @@
                 
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center p-5">
-                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end position-relative notVisible fadeInTop" id="dev">
+                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end position-relative notVisible" id="dev">
                     <span class="lex text-light fs-4">Développement</span>
                     <img class="position-absolute" src="../assets/icons/design-developpement.svg" style="top: 7em; right: -2.8em;">
                 </div>
                 
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center p-5">
-                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end position-relative notVisible fadeInTop" id="web">
+                <div class="bloc-expertises pb-5 d-flex justify-content-center align-items-end position-relative notVisible" id="web">
                     <span class="lex text-light fs-4">Webmarketing</span>
                     <img class="position-absolute" src="../assets/icons/design-marketing.svg" style="top: 5em; right: -2.8em;">
                 </div>
@@ -51,7 +51,7 @@
                     <li>Consulting digital</li>
                 </ul>
             </div>
-            <div id="img1" class="col-12 col-md-6 d-flex align-items-center justify-content-center" >
+            <div id="img1" class="col-12 col-md-6 d-flex align-items-center justify-content-center notVisible">
                 <img  src="../assets/images/expertise_strategie.png" class="img-fluid">
             </div>
         </div>
@@ -103,20 +103,20 @@
     <div class="container pt-5 pb-5">
         <div class="row position-relative">
             <div class="col-12 col-lg-3">
-                <h2 class="nord mb-3">Developpement</h2>
-                <p class="lex">Du wireframe en passant par les recettes jusqu'à la mise en ligne, le pôle développement apporte la réponse technique à vos problématiques digitales.</p>
+                <h2 id="h4"class="nord mb-3 notVisible">Developpement</h2>
+                <p id="p3" class="lex notVisible">Du wireframe en passant par les recettes jusqu'à la mise en ligne, le pôle développement apporte la réponse technique à vos problématiques digitales.</p>
             </div>
             <div class="col-12 col-lg-3"></div>
             <div class="col-12 col-lg-3"></div>
             <div class="col-12 bg-light rounded-4">
                 <div class="col-12 col-lg-4 p-5">
-                    <h3 class="nord">Site internet, vitrine et e-commerce</h3>
-                    <p class="lex">Point d'entrée principal pour de nombreuses entreprises, le site internet, qu'il soit vitrine ou e-commerce, reste un sujet complexe et opaque dans son élaboration. Notre équipe vous accompagne dans sa réalisation et son déploiement sans utiliser de mots incompréhensibles.</p>
+                    <h3 id="h5"class="nord notVisible">Site internet, vitrine et e-commerce</h3>
+                    <p id="p4" class="lex notVisible">Point d'entrée principal pour de nombreuses entreprises, le site internet, qu'il soit vitrine ou e-commerce, reste un sujet complexe et opaque dans son élaboration. Notre équipe vous accompagne dans sa réalisation et son déploiement sans utiliser de mots incompréhensibles.</p>
                 </div>
                 <div class="col-12 col-lg-3"></div>
                 <div class="col-12 col-lg-3"></div>
             </div>
-            <img src="../assets/images/exemple-developpement.png" id="exemple-developpement" class="d-none d-lg-block position-absolute img-fluid">
+            <img src="../assets/images/exemple-developpement.png" id="exemple-developpement" class="d-none d-lg-block position-absolute img-fluid notVisible">
         </div>
     </div>
 </section>
@@ -125,14 +125,14 @@
         <div class="row mb-3">
             <div class="col-12 col-lg-3"></div>
             <div class="col-12 col-lg-6 text-center">
-                <h2 class="nord mb-3">Webmarketing</h2>
-                <p class="lex">Regroupe les différents leviers participant au développement de votre activité afin de répondre à vos attentes de visibilité, communication, chiffre d'affaire ...</p>
+                <h2 id="h6" class="nord mb-3 notVisible">Webmarketing</h2>
+                <p id="p5" class="lex notVisible">Regroupe les différents leviers participant au développement de votre activité afin de répondre à vos attentes de visibilité, communication, chiffre d'affaire ...</p>
             </div>
             <div class="col-12 col-lg-3"></div>
         </div>
         <div class="row mb-5">
             <div class="col-12 col-lg-2"></div>
-            <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center bg-light p-5 rounded-3">
+            <div id="leviers" class="col-12 col-lg-8 d-flex align-items-center justify-content-center bg-light p-5 rounded-3 notVisible">
                 <div class="col lex d-flex align-items-center justify-content-end pe-5 fw-bold">
                     <ul>
                         <li>Réseaux sociaux</li>
@@ -154,19 +154,19 @@
         <div class="row">
             <div class="col-12 col-lg-6"></div>
             <div class="col-12 col-lg-6 text-end">
-                <h3 class="nord">Atteignez vos objectifs...<br>Faites le bon choix</h3>
-                <p class="lex">Perdu dans le choix du levier à activer ou manque de temps pour réaliser votre community management ? Chez Dimension on a parfaitement conscience que cela peut paraître complexe... Ou chronophage ! Notre équipe vous accompagne et surtout vous éclaire sur toutes ces questions.</p>
+                <h3 id="h7" class="nord notVisible">Atteignez vos objectifs...<br>Faites le bon choix</h3>
+                <p id="p6" class="lex notVisible">Perdu dans le choix du levier à activer ou manque de temps pour réaliser votre community management ? Chez Dimension on a parfaitement conscience que cela peut paraître complexe... Ou chronophage ! Notre équipe vous accompagne et surtout vous éclaire sur toutes ces questions.</p>
             </div>
         </div>
-        <img src="../assets/images/expertise_webmarketing.png" class="d-none d-lg-block position-absolute" id="webmarketing-img">
+        <img src="../assets/images/expertise_webmarketing.png" class="d-none d-lg-block position-absolute notVisible" id="webmarketing-img">
     </div>
 </section>
 <section>
 <div class="container p-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="nord text-center">Convaincu ? Alors n'hesitez plus !</h2>
-                <a href="../public/index.php?page=contact"><button class="button mt-5">Contactez-nous</button></a>
+                <h2 id="h8" class="nord text-center notVisible">Convaincu ? Alors n'hesitez plus !</h2>
+                <a  href="../public/index.php?page=contact"><button id="btn1" class="button mt-5 notVisible">Contactez-nous</button></a>
             </div>
         </div>
     </div>
@@ -187,6 +187,21 @@ let creation2 = document.getElementById('creation-2');
 let creation3 = document.getElementById('creation-3');
 let creation4 = document.getElementById('creation-4');
 let creationSubtitle = document.getElementById('creation-subtitle');
+let dev = document.getElementById('dev');
+let web = document.getElementById('web');
+let h4 = document.getElementById('h4');
+let p3 = document.getElementById('p3');
+let h5 = document.getElementById('h5');
+let p4 = document.getElementById('p4');
+let website = document.getElementById('exemple-developpement');
+let h6 = document.getElementById('h6');
+let p5 = document.getElementById('p5');
+let leviers = document.getElementById('leviers');
+let laptop = document.getElementById('webmarketing-img');
+let h7 = document.getElementById('h7');
+let p6 = document.getElementById('p6');
+let h8 = document.getElementById('h8');
+let btn1 = document.getElementById('btn1');
 
 // Fonction qui vérifie si l'élément est visible
     function isElementInViewport(el) {
@@ -196,7 +211,7 @@ let creationSubtitle = document.getElementById('creation-subtitle');
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
-            rect.bottom <= windowHeight &&
+            rect.bottom - 100 <= windowHeight &&
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
@@ -204,24 +219,17 @@ let creationSubtitle = document.getElementById('creation-subtitle');
     let strategie = document.getElementById('strategie');
     setTimeout(() => {
         strategie.classList.add('visible');
-    }, 2000);
+    }, 1000);
     let creation = document.getElementById('creation');
     setTimeout(() => {
         creation.classList.add('visible');
-    }, 2000);
+    }, 1000);
     
     let fadeInDown = document.querySelector('.fadeInDown');
     setTimeout(() => {
         fadeInDown.classList.add('visible');
     }, 1200);
-    let dev = document.getElementById('dev');
-    setTimeout(() => {
-        dev.classList.add('visible');
-    }, 2000);
-    let web = document.getElementById('web');
-    setTimeout(() => {
-        web.classList.add('visible');
-    }, 2000);
+
 
 // Fonction qui ajoute la classe d'animation
     function animateOnScroll() {
@@ -229,6 +237,18 @@ let creationSubtitle = document.getElementById('creation-subtitle');
             h1.classList.add('fadeInDown');
             setTimeout(() => {
             h1.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(dev)) {
+            dev.classList.add('fadeInDown');
+            setTimeout(() => {
+            dev.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(web)) {
+            web.classList.add('fadeInDown');
+            setTimeout(() => {
+            web.classList.add('visible');
             },  1000);
         }
         if (isElementInViewport(p1)) {
@@ -253,7 +273,7 @@ let creationSubtitle = document.getElementById('creation-subtitle');
             img1.classList.add('fadeInDown');
             setTimeout(() => {
             img1.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(h3)) {
             h3.classList.add('fadeInDown');
@@ -265,7 +285,7 @@ let creationSubtitle = document.getElementById('creation-subtitle');
             p2.classList.add('fadeInRight');
             setTimeout(() => {
             p2.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(creation1)) {
             creation1.classList.add('fadeInDown');
@@ -290,6 +310,84 @@ let creationSubtitle = document.getElementById('creation-subtitle');
             setTimeout(() => {
             creation4.classList.add('visible');
             },  1200);
+        }
+        if (isElementInViewport(h4)) {
+            h4.classList.add('fadeInDown');
+            setTimeout(() => {
+            h4.classList.add('visible');
+            },  1200);
+        }
+        if (isElementInViewport(p3)) {
+            p3.classList.add('fadeInLeft');
+            setTimeout(() => {
+            p3.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(h5)) {
+            h5.classList.add('fadeInDown');
+            setTimeout(() => {
+            h5.classList.add('visible');
+            },  1200);
+        }
+        if (isElementInViewport(p4)) {
+            p4.classList.add('fadeInLeft');
+            setTimeout(() => {
+            p4.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(website)) {
+            website.classList.add('fadeInRight');
+            setTimeout(() => {
+            website.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(h6)) {
+            h6.classList.add('fadeInDown');
+            setTimeout(() => {
+            h6.classList.add('visible');
+            },  1200);
+        }
+        if (isElementInViewport(p5)) {
+            p5.classList.add('fadeInTop');
+            setTimeout(() => {
+            p5.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(leviers)) {
+            leviers.classList.add('fadeInTop');
+            setTimeout(() => {
+            leviers.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(laptop)) {
+            laptop.classList.add('fadeInLeft');
+            setTimeout(() => {
+            laptop.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(h7)) {
+            h7.classList.add('fadeInDown');
+            setTimeout(() => {
+            h7.classList.add('visible');
+            },  1200);
+        }
+        if (isElementInViewport(p6)) {
+            p6.classList.add('fadeInRight');
+            setTimeout(() => {
+            p6.classList.add('visible');
+            },  1000);
+        }
+        if (isElementInViewport(h8)) {
+            h8.classList.add('fadeInDown');
+            setTimeout(() => {
+            h8.classList.add('visible');
+            },  1200);
+        }
+        if (isElementInViewport(btn1)) {
+            btn1.classList.add('focusIn');
+            setTimeout(() => {
+            btn1.classList.add('visible');
+            },  1000);
         }
     }
 

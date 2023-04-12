@@ -79,20 +79,20 @@
     </div>
 </section>
 <section>
-    <h1 id="h2" class="text-center nord">Nos recents projets</h1>
+    <h1 id="h2" class="text-center nord notVisible">Nos recents projets</h1>
     <div class="container pt-5 pb-5">
         <div class="row gy-3">
             <div class="col-12 col-md-3">
-                <img id="projet-1" class="img-fluid notVisible" src="../assets/images/agence_projet1.png">
+                <img id="projet-1" class="projects img-fluid notVisible" src="../assets/images/agence_projet1.png">
             </div>
             <div class="col-12 col-md-3">
-                <img id="projet-2" class="img-fluid notVisible" src="../assets/images/agence_projet2.png">
+                <img id="projet-2" class="projects img-fluid notVisible" src="../assets/images/agence_projet2.png">
             </div>
             <div class="col-12 col-md-3">
-                <img id="projet-3" class="img-fluid notVisible" src="../assets/images/agence_projet3.png">
+                <img id="projet-3" class="projects img-fluid notVisible" src="../assets/images/agence_projet3.png">
             </div>
             <div class="col-12 col-md-3">
-                <img id="projet-4" class="img-fluid notVisible" src="../assets/images/agence_projet4.png">
+                <img id="projet-4" class="projects img-fluid notVisible" src="../assets/images/agence_projet4.png">
             </div>
             <div class="col-12 text-center mt-5">
                 <a id="btn1" class="notVisible" href="../public/index.php?page=projets"><button class="button">PLUS DE PROJETS</button></a>
@@ -155,7 +155,7 @@
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
-            rect.bottom <= windowHeight &&
+            rect.bottom - 100 <= windowHeight &&
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
@@ -163,7 +163,7 @@
     let fadeInTop = document.querySelector('.fadeInTop');
     setTimeout(() => {
         fadeInTop.classList.add('visible');
-    }, 2000);
+    }, 1000);
 
     // Fonction qui ajoute la classe d'animation
     function animateOnScroll() {
@@ -183,85 +183,85 @@
             p1.classList.add('fadeInLeft');
             setTimeout(() => {
             p1.classList.add('visible');
-            },  1200);
+            },  1000);
         }
         if (isElementInViewport(team1)) {
             team1.classList.add('fadeInTop');
             setTimeout(() => {
             team1.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(team2)) {
             team2.classList.add('fadeInTop');
             setTimeout(() => {
             team2.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(team3)) {
             team3.classList.add('fadeInTop');
             setTimeout(() => {
             team3.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(team4)) {
             team4.classList.add('fadeInTop');
             setTimeout(() => {
             team4.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(team5)) {
             team5.classList.add('fadeInTop');
             setTimeout(() => {
             team5.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(citation)) {
             citation.classList.add('focusIn');
             setTimeout(() => {
             citation.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(author)) {
             author.classList.add('fadeInTop');
             setTimeout(() => {
             author.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(h2)) {
             h2.classList.add('fadeInDown');
             setTimeout(() => {
             h2.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(projet1)) {
             projet1.classList.add('fadeInTop');
             setTimeout(() => {
             projet1.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(projet2)) {
             projet2.classList.add('fadeInTop');
             setTimeout(() => {
             projet2.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(projet3)) {
             projet3.classList.add('fadeInTop');
             setTimeout(() => {
             projet3.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(projet4)) {
             projet4.classList.add('fadeInTop');
             setTimeout(() => {
             projet4.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(btn1)) {
             btn1.classList.add('focusIn');
             setTimeout(() => {
             btn1.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(span1)) {
             span1.classList.add('fadeInDown');
@@ -279,13 +279,13 @@
             span3.classList.add('focusIn');
             setTimeout(() => {
             span3.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(span4)) {
             span4.classList.add('fadeInTop');
             setTimeout(() => {
             span4.classList.add('visible');
-            },  2000);
+            },  1000);
         }
         if (isElementInViewport(h3)) {
             h3.classList.add('fadeInDown');

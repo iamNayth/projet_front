@@ -135,7 +135,6 @@ main {
 } 
 .fadeInTop {
     animation: fadeInTop 1s;
-    animation-delay: 1s;
 }
 @keyframes fadeInTop {
     from {
@@ -151,7 +150,6 @@ main {
 }
 .fadeInLeft {
     animation: fadeInLeft 1s;
-    animation-delay: 1s;
 }
 @keyframes fadeInLeft {
     from {
@@ -166,7 +164,6 @@ main {
 } 
 .fadeInRight {
     animation: fadeInRight 1s;
-    animation-delay: 1s;
 }
 @keyframes fadeInRight {
     from {
@@ -182,7 +179,6 @@ main {
 .focusIn {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation-delay: 1.5s;
 }
 @-webkit-keyframes text-focus-in {
     0% {
@@ -211,7 +207,6 @@ main {
 .slide-in-bck-center {
 	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-delay: 1s;
 }
 @-webkit-keyframes slide-in-bck-center {
     0% {
@@ -253,7 +248,6 @@ main {
 .slide-in-elliptic {
 	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation-delay: 1s;
 }
 @-webkit-keyframes slide-in-elliptic-top-fwd {
     0% {
@@ -536,6 +530,12 @@ main {
     background-size: cover;
 }
 
+.projects {
+    transition: all 0.5s ease-in-out;
+}
+.projects:hover {
+    transform: scale(110%);
+}
 /****EXPERTISES****/
 
 #hero-expertises {
@@ -587,7 +587,7 @@ main {
     height: 380px;
     width:605px;
     top: 6em;
-    right: 15em; 
+    right: 10em; 
 }
 
 #webmarketing-img {
