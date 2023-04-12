@@ -79,16 +79,16 @@
         <div  class="container mb-5 ">
             <div class="row">
                 <div class="col-3">
-                    <img src="../assets/images/accueil_projet1.png" class="img-fluid">
+                    <img src="../assets/images/accueil_projet1.png" class="projects img-fluid">
                 </div>
                 <div class="col-3">
-                    <img src="../assets/images/accueil_projet2.png" class="img-fluid">
+                    <img src="../assets/images/accueil_projet2.png" class="projects img-fluid">
                 </div>
                 <div class="col-3">
-                    <img src="../assets/images/accueil_projet3.png" class="img-fluid">
+                    <img src="../assets/images/accueil_projet3.png" class="projects img-fluid">
                 </div>
                 <div class="col-3">
-                    <img src="../assets/images/accueil_projet4.png" class="img-fluid">
+                    <img src="../assets/images/accueil_projet4.png" class="projects img-fluid">
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center mt-5">
@@ -97,7 +97,7 @@
         </div>
     </section>
     <section class="position-relative">
-        <h1 class="nord mb-3 text-center mb-3">ils nous ont fait<br>confiance</h1>
+        <h1 id="h4" class="nord mb-3 text-center mb-3 notVisible">ils nous ont fait<br>confiance</h1>
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-items-center mb-5 mt-5">
@@ -118,7 +118,7 @@
         <div id="design-3" class="d-none d-md-block"><img src="../assets/images/Design3.svg"></div>
     </section>
     <section>
-        <h1 class="nord mb-3 text-center mb-5">Et si vous tentiez<br>l'experience ?</h1>
+        <h1 id="h5" class="nord mb-3 text-center mb-5 notVisible">Et si vous tentiez<br>l'experience ?</h1>
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-items-center">
@@ -163,6 +163,8 @@
         let p2 = document.getElementById('p2');
         let btn2 = document.getElementById('btn2');
         let h3 = document.getElementById('h3');
+        let h4 = document.getElementById('h4');
+        let h5 = document.getElementById('h5');
         let btn3 = document.getElementById('btn3');
         let arrow = document.getElementById('arrow');
 
@@ -287,6 +289,18 @@
                 h3.classList.add('fadeInDown');
                 setTimeout(() => {
                 h3.classList.add('visible');
+                },  1200);
+            }
+            if (isElementInViewport(h4)) {
+                h4.classList.add('fadeInDown');
+                setTimeout(() => {
+                h4.classList.add('visible');
+                },  1200);
+            }
+            if (isElementInViewport(h5)) {
+                h5.classList.add('fadeInDown');
+                setTimeout(() => {
+                h5.classList.add('visible');
                 },  1200);
             }
             if (isElementInViewport(arrow)) {

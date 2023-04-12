@@ -4,12 +4,12 @@
 <section id="hero-contact">
     <div class="d-none d-md-block" id="cut1"></div>
     <div class="d-none d-md-block" id="cut2"></div>
-    <span id="contact-bottom" class="d-none d-md-block nord w-100 text-center">Remplissez notre formulaire de contact</span>
+    <span id="contact-bottom" class="d-none d-md-block nord w-100 text-center focusIn">Remplissez notre formulaire de contact</span>
     <div class="container h-100">
         <div class="row">
             <div class="col-12 text-center text-light fs-1 pt-5">
-                <span class="nord-book">Pour tout projets, devis ou conseils</span><br>
-                <span class="nord">Contactez nous !</span>
+                <h1 class="nord-book fadeInDown">Pour tout projets, devis ou conseils</h1>
+                <h2 class="nord fadeInTop fs-1">Contactez nous !</h2>
             </div>
         </div>
         <div class="row mt-5 p-5">
