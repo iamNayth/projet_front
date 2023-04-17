@@ -28,6 +28,9 @@ try {
         elseif ($page == "admin") {
             displayAdmins();
         }
+        elseif ($page == "add_project") {
+            validate_addProject();
+        }
     } else {
          displayHomepage();
     }

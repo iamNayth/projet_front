@@ -11,6 +11,11 @@
         </div>
     </div>
 </section>
+<section>
+    <?php foreach ($projects as $project) { ?>
+        
+    <?php } ?>
+</section>
 
 <?php $content = ob_get_clean();?>
 <?php require('../templates/layout.php') ?>
