@@ -1,5 +1,5 @@
 <?php
-
+require_once('../models/db.php');
 function getProjects() 
 {
     $database = dbConnect();
@@ -23,7 +23,7 @@ function getProjects()
 }
 
 function addProject() {
-    $msg = "";
+    //$msg = "";
     $database = dbConnect();
     
     if ((!isset($_POST['name']) || empty($_POST['name']))
@@ -31,6 +31,7 @@ function addProject() {
     || (!isset($_POST['conclusion']) || empty($_POST['conclusion']))       
     || (!isset($_POST['second_description']) || empty($_POST['second_description']))) {       
         $msg = 'Il faut faut remplir tous les champs';
+        
     } else {
         $name = strip_tags($_POST['name']);
         $first_description = strip_tags($_POST['first_description']);
@@ -46,9 +47,38 @@ function addProject() {
 
         $msg = "Erreur juste avant traitement des images";
 
+
+        $query = "SELECT id FROM projects ORDER BY id DESC Limit 1";
+        $stmt = $database->prepare($query);
+        $stmt -> execute();
+        $recupId = $stmt->fetch();
+        $id = $recupId['id'];
+
         if ((isset($_FILES['first_picture']) && $_FILES['first_picture']['error'] == 0)
-        || (isset($_FILES['second_picture']) && $_FILES['second_picture']['error'] == 0)) {
-            // Testons si le fichier n'est pas trop gros
+        || (isset($_FILES['second_picture']) && $_FILES['second_picture']['error'] == 0)
+        || (isset($_FILES['cover_picture']) && $_FILES['cover_picture']['error'] == 0)) {
+            // Testons si le fichier n'est pas trop gros\
+            if ($_FILES['cover_picture']['size'] <= 1000000) {
+                // Testons si l'extension est autorisée
+                $fileInfo = pathinfo($_FILES['cover_picture']['name']);
+                $extension = $fileInfo['extension'];
+                $allowedExtensions = ['jpg', 'jpeg', 'gif', 'png', 'jfif', 'webp', 'avif'];
+                
+                if (in_array($extension, $allowedExtensions)) {
+                    // On peut valider le fichier et le stocker définitivement
+                    $path = '../assets/uploads/' . basename($_FILES['cover_picture']['name']);
+                    move_uploaded_file($_FILES['cover_picture']['tmp_name'], $path);
+                    echo $path;
+                    $msg = "S'arrete au deplacement";
+                    
+                    $sth = $database->prepare("UPDATE `projects` SET `cover_picture` = :cover_picture WHERE id = :id");
+                    $sth->bindParam(':cover_picture', $path, PDO::PARAM_STR);
+                    $sth->bindParam(':id', $id, PDO::PARAM_INT);
+                    $sth->execute();
+
+                    $msg = "Erreur juste avant traitement des images";
+                }
+            }
             if ($_FILES['first_picture']['size'] <= 1000000) {
                 // Testons si l'extension est autorisée
                 $fileInfo = pathinfo($_FILES['first_picture']['name']);
@@ -57,13 +87,14 @@ function addProject() {
                 
                 if (in_array($extension, $allowedExtensions)) {
                     // On peut valider le fichier et le stocker définitivement
-                    $path = '../admin/assets/uploads/' . basename($_FILES['first_picture']['name']);
+                    $path = '../assets/uploads/' . basename($_FILES['first_picture']['name']);
                     move_uploaded_file($_FILES['first_picture']['tmp_name'], $path);
                     
                     $msg = "S'arrete au deplacement";
                     
-                    $sth = $database->prepare("INSERT INTO `projects`(`first_picture`) VALUES (:first_picture)");
+                    $sth = $database->prepare("UPDATE `projects` SET `first_picture` = :first_picture WHERE id = :id");
                     $sth->bindParam(':first_picture', $path, PDO::PARAM_STR);
+                    $sth->bindParam(':id', $id, PDO::PARAM_INT);
                     $sth->execute();
                 }
             }
@@ -75,20 +106,21 @@ function addProject() {
                 
                 if (in_array($extension, $allowedExtensions)) {
                     // On peut valider le fichier et le stocker définitivement
-                    $path = '../admin/assets/uploads/' . basename($_FILES['second_picture']['name']);
+                    $path = '../assets/uploads/' . basename($_FILES['second_picture']['name']);
                     move_uploaded_file($_FILES['second_picture']['tmp_name'], $path);
                     
                     $msg = "S'arrete au deplacement";
                     
-                    $sth = $database->prepare("INSERT INTO `projects`(`second_picture`) VALUES (:second_picture)");
+                    $sth = $database->prepare("UPDATE `projects` SET `second_picture` = :second_picture WHERE id = :id");
                     $sth->bindParam(':second_picture', $path, PDO::PARAM_STR);
+                    $sth->bindParam(':id', $id, PDO::PARAM_INT);
                     $sth->execute();
                 }
             }
-            $msg= "L'ajout a bien été effectué !";
+            $msg= 'Ajout effectué';
         } else {
             $msg = "Images non isset";
         }
-        return $msg;
     } 
+    return $msg;
 }

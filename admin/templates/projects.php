@@ -18,7 +18,7 @@
         foreach($projects as $project){?>
         <tr class="table-striped">
             <td><?=$project['name']?></td>
-            <td><img src="../<?=$project['cover_picture']?>"class='img-fluid' style="height: 100px;"></td>
+            <td><img src="<?=$project['cover_picture']?>"class='img-fluid' style="height: 100px;"></td>
             <td><?=$project['conclusion']?></td>
             <td><a href="index.php?page=project&id=<?php echo $project['id']?>" class="btn btn-danger w-100" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));">Supprimer</a></td>
         </tr>
@@ -30,7 +30,7 @@
 </section>
 <section class="p-5">
     <h1 class='nord mb-5'>AJOUTER UN PROJET</h1>
-    <form action="../public/index.php?page=add_project" method="post" enctype="multipart/form-data">
+    <form action="index.php?page=add_project" method="post" enctype="multipart/form-data">
         <label class="form-label lex">Nom</label>
         <input type="text" class="form-control mb-3" placeholder="Nom" name="name">
         <label for="formFile" class="form-label lex">Image de couverture du projet</label>
@@ -45,7 +45,7 @@
         <input class="form-control mb-3" type="file" name="second_picture">
         <label class="form-label lex">Conclusion</label>
         <textarea type="textaera" class="form-control mb-3 lex" placeholder="Description" name="conclusion"></textarea>
-        <button class="btn btn-primary" type="submit" name="addAdmin">Ajouter</button>
+        <button class="btn btn-primary" type="submit">Ajouter</button>
     </form>
 </section>
 <?= $msg ?>
