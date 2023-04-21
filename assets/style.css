@@ -674,6 +674,29 @@ textarea {
     color: white;
 }
 
+/****Projects****/
+
+.gradient {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 36.46%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.project-img {
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background: #1D1E18;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 46.88%, rgba(0, 0, 0, 0.8) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 46.88%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+project-card {
+    transition: all ease-in-out 0.5s;
+}
+project-card:hover {
+    transform: scale(105%);
+}
+
 /****Mediaquery****/
 
 /* Small devices (landscape phones, 576px and up) */

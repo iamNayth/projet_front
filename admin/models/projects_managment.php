@@ -1,5 +1,5 @@
 <?php
-require_once('../models/db.php');
+
 function getProjects() 
 {
     $database = dbConnect();
@@ -58,7 +58,7 @@ function addProject() {
         || (isset($_FILES['second_picture']) && $_FILES['second_picture']['error'] == 0)
         || (isset($_FILES['cover_picture']) && $_FILES['cover_picture']['error'] == 0)) {
             // Testons si le fichier n'est pas trop gros\
-            if ($_FILES['cover_picture']['size'] <= 1000000) {
+            if ($_FILES['cover_picture']['size'] <= 2000000) {
                 // Testons si l'extension est autorisée
                 $fileInfo = pathinfo($_FILES['cover_picture']['name']);
                 $extension = $fileInfo['extension'];
@@ -68,7 +68,6 @@ function addProject() {
                     // On peut valider le fichier et le stocker définitivement
                     $path = '../assets/uploads/' . basename($_FILES['cover_picture']['name']);
                     move_uploaded_file($_FILES['cover_picture']['tmp_name'], $path);
-                    echo $path;
                     $msg = "S'arrete au deplacement";
                     
                     $sth = $database->prepare("UPDATE `projects` SET `cover_picture` = :cover_picture WHERE id = :id");
@@ -79,7 +78,7 @@ function addProject() {
                     $msg = "Erreur juste avant traitement des images";
                 }
             }
-            if ($_FILES['first_picture']['size'] <= 1000000) {
+            if ($_FILES['first_picture']['size'] <= 2000000) {
                 // Testons si l'extension est autorisée
                 $fileInfo = pathinfo($_FILES['first_picture']['name']);
                 $extension = $fileInfo['extension'];
@@ -98,7 +97,7 @@ function addProject() {
                     $sth->execute();
                 }
             }
-            if ($_FILES['second_picture']['size'] <= 1000000) {
+            if ($_FILES['second_picture']['size'] <= 2000000) {
                 // Testons si l'extension est autorisée
                 $fileInfo = pathinfo($_FILES['second_picture']['name']);
                 $extension = $fileInfo['extension'];
@@ -123,4 +122,14 @@ function addProject() {
         }
     } 
     return $msg;
+}
+
+function recupProjectById($id) {
+    $database = dbConnect();
+
+    $statement = $database->prepare("SELECT * FROM projects WHERE id = :id");
+    $statement ->bindParam(':id', $id, PDO::PARAM_INT);
+    $statement->execute();
+    $projects = $statement-> fetchAll(PDO::FETCH_ASSOC);
+    return $projects;
 }

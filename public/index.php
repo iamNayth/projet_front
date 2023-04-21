@@ -26,6 +26,9 @@ try {
         elseif ($page == "contact") {
             displayContact();
         }
+        elseif ($page == "project_view") {
+            displayProjectView();
+        }
     } else {
          displayHomepage();
     }

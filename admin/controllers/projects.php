@@ -11,7 +11,7 @@ function displayProjects() {
 
 function validate_addProject() {
     $msg="";
-    $projects = getProjects();
     $msg = addProject();
+    $projects = getProjects();
     require('../templates/projects.php');
 }
