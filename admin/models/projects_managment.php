@@ -130,6 +130,6 @@ function recupProjectById($id) {
     $statement = $database->prepare("SELECT * FROM projects WHERE id = :id");
     $statement ->bindParam(':id', $id, PDO::PARAM_INT);
     $statement->execute();
-    $projects = $statement-> fetchAll(PDO::FETCH_ASSOC);
+    $projects = $statement-> fetchAll();
     return $projects;
 }

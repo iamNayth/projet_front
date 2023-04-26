@@ -7,6 +7,7 @@ try {
     require_once('../controllers/expertises.php');
     require_once('../controllers/contact.php');
     require_once('../controllers/projets.php');
+    require_once('../controllers/project_view.php');
     
 
     if( isset($_GET['page'])) {

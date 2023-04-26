@@ -1,4 +1,4 @@
-<?php $title = "Accueil"; ?>
+<?php $title = "Projets"; ?>
 <?php ob_start(); ?>
 
 <section>
@@ -16,16 +16,17 @@
         <div class="row">
             <?php foreach ($projects as $project) { ?>
                 <div class="col-3 d-flex justify-content-center">
-                    <a href="index.php?page=project_view&<?=$project['id']?>" class="link-project"><div class="project-card position-relative h-100 w-auto">
+                    <a href="index.php?page=project_view&id=<?=$project['id']?>" class="link-project"><div class="project-card position-relative h-100 w-auto">
                         <div class="project-img position-absolute"></div>
                         <span class="position-absolute nord text-light" style="bottom: 2em; left:50%; transform: translateX(-50%)"><?= $project['name'] ?></span>
                         <img class="img-fluid "src="<?= str_replace('../assets/', '../admin/assets/', $project['cover_picture'])?>" >
                     </div></a>
                 </div>
-            <?php } ?>
+                <?php } ?>
+            </div>
         </div>
-    </div>
-</section>
-
-<?php $content = ob_get_clean();?>
-<?php require('../templates/layout.php') ?>
+    </section>
+    
+    <?php $content = ob_get_clean();?>
+    <?php require('../templates/layout.php') ?>
+    
